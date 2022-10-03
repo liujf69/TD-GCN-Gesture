@@ -5,7 +5,7 @@ Then, you need to install torchlight by running ```pip install -e torchlight``` 
 
 # Data Preparation
 ## Download four datasets:
-1. **SHREC’17 Track** dataset from <br />
+1. **SHREC’17 Track** dataset from [http://www-rech.telecom-lille.fr/shrec2017-hand/](http://www-rech.telecom-lille.fr/shrec2017-hand/) <br />
 2. **DHG-14/28** dataset from <br />
 3. **NTU RGB+D 60** Skeleton dataset from <br />
 4. **NW-UCLA** dataset from <br />
