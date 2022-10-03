@@ -10,7 +10,7 @@ Then, you need to install torchlight by running ```pip install -e torchlight``` 
 3. **NTU RGB+D 60** Skeleton dataset from [https://rose1.ntu.edu.sg/dataset/actionRecognition/](https://rose1.ntu.edu.sg/dataset/actionRecognition/) <br />
 4. **NW-UCLA** dataset from [Download NW-UCLA dataset](https://www.dropbox.com/s/10pcm4pksjy6mkq/all_sqe.zip?dl=0) <br />
 ## Put downloaded data into the following directory structure:
-'''
+```
 - data/
   - shrec/
     - shrec17_dataset/
@@ -28,7 +28,7 @@ Then, you need to install torchlight by running ```pip install -e torchlight``` 
     - nturgbd_raw/
 	  - nturgb+d_skeletons
         ...
-'''
+```
 ## SHREC’17 Track dataset:
 1. First, extract all files to ```/data/shrec/shrec17_dataset``` <br />
 2. Then, run ```python gen_traindataset.py``` and ```python gen_testdataset.py``` <br />
