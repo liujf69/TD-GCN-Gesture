@@ -6,9 +6,9 @@ Then, you need to install torchlight by running ```pip install -e torchlight``` 
 # Data Preparation
 ## Download four datasets:
 1. **SHREC’17 Track** dataset from [http://www-rech.telecom-lille.fr/shrec2017-hand/](http://www-rech.telecom-lille.fr/shrec2017-hand/) <br />
-2. **DHG-14/28** dataset from <br />
-3. **NTU RGB+D 60** Skeleton dataset from <br />
-4. **NW-UCLA** dataset from <br />
+2. **DHG-14/28** dataset from [http://www-rech.telecom-lille.fr/DHGdataset/](http://www-rech.telecom-lille.fr/DHGdataset/) <br />
+3. **NTU RGB+D 60** Skeleton dataset from [https://rose1.ntu.edu.sg/dataset/actionRecognition/](https://rose1.ntu.edu.sg/dataset/actionRecognition/) <br />
+4. **NW-UCLA** dataset from [Download NW-UCLA dataset](https://www.dropbox.com/s/10pcm4pksjy6mkq/all_sqe.zip?dl=0) <br />
 
 ## SHREC’17 Track dataset:
 1. First, extract all files to ```/data/shrec/shrec17_dataset``` <br />
