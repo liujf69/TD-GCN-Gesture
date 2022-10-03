@@ -31,5 +31,11 @@ You can change the configuration in the yaml file and in the main function. We a
 run ```python main.py --device 0 1 --config ./config/shrec17/shrec17.yaml``` <br />
 ## DHG-14/28 dataset:
 run ```python main.py --device 0 1 --config ./config/dhg14-28/DHG14-28.yaml``` <br />
-## NW-UCLA dataset
+## NTU RGB+D 60 dataset:
+On the benchmark of cross-view, run ```python main.py --device 0 1 --config ./config/nturgbd-cross-view/default.yaml``` <br />
+On the benchmark of cross-subject, run ```python main.py --device 0 1 --config ./config/nturgbd-cross-subject/default.yaml``` <br />
+## NW-UCLA dataset:
 run ```python main.py --device 0 1 --config ./config/ucla/nw-ucla.yaml``` <br />
+
+# Testing
+We provide several trained weight files and place them in the checkpoints folder.
