@@ -41,4 +41,4 @@ Run ```python main.py --device 0 1 --config ./config/ucla/nw-ucla.yaml``` <br />
 We provide several trained weight files and place them in the checkpoints folder.
 
 # Contact
-For any questions, feel free to contact: liujf69@mail2.sysu.edu.cn
+For any questions, feel free to contact: ```liujf69@mail2.sysu.edu.cn```
