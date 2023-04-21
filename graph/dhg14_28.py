@@ -4,12 +4,12 @@ import numpy as np
 sys.path.extend(['../'])
 from graph import tools
 
-num_node = 22 # 22个关节
+num_node = 22 
 self_link = [(i, i) for i in range(num_node)]
 inward_ori_index = [(1, 2), (3, 1), (4, 3), (5, 4), (6, 5), (7, 2), (8, 7), (9, 8), (10, 9), (11, 2), (12, 11),
                      (13, 12), (14, 13), (15, 2), (16, 15), (17, 16), (18, 17), (19, 2), (20, 19), (21, 20), (22, 21),
                      (2, 2)]
-inward = [(i - 1, j - 1) for (i, j) in inward_ori_index] # 减1是为了从0开始，因为定义index时从1开始
+inward = [(i - 1, j - 1) for (i, j) in inward_ori_index] 
 outward = [(j, i) for (i, j) in inward]
 neighbor = inward + outward
 
