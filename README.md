@@ -1,5 +1,5 @@
 # TD-GCN-Gesture
-
+![image](https://github.com/liujf69/TD-GCN-Gesture/blob/master/fig.pdf)
 # Prerequisites
 You can install all dependencies by running ```pip install -r requirements.txt```  <br />
 Then, you need to install torchlight by running ```pip install -e torchlight```  <br />
