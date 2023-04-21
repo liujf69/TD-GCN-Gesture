@@ -9,37 +9,37 @@ class Feeder(Dataset):
                  window_size=180, normalization=False, debug=False, use_mmap=True):
         self.nw_hand17_root = 'data/shrec/shrec17_jsons/'
 
-        if 'val' in label_path:  # 导入test_samples.json 并赋给self.data_dict
+        if 'val' in label_path:  
             self.train_val = 'val'
             with open(self.nw_hand17_root + 'test_samples.json', 'r') as f1:
                 json_file = json.load(f1)
             self.data_dict = json_file
-            self.flag = 'test_jsons/' # 这个用于后面导入数据时寻址
-        else: # 导入train_samples.json 并赋给self.data_dict
+            self.flag = 'test_jsons/' 
+        else: 
             self.train_val = 'train'
             with open(self.nw_hand17_root + 'train_samples.json', 'r') as f2:
                 json_file = json.load(f2)
             self.data_dict = json_file
-            self.flag = 'train_jsons/' # 这个用于后面导入数据时寻址
+            self.flag = 'train_jsons/' 
 
-        # 定义手掌的骨骼连接
+        
         self.bone = [(1, 2), (3, 1), (4, 3), (5, 4), (6, 5), (7, 2), (8, 7), (9, 8), (10, 9), (11, 2), (12, 11),
                      (13, 12), (14, 13), (15, 2), (16, 15), (17, 16), (18, 17), (19, 2), (20, 19), (21, 20), (22, 21),
-                     (2, 2)]  # 新增(2, 2)以构成22对骨骼
+                     (2, 2)]  
 
-        self.load_data()  # 运行load_data的函数，导入骨架数据
-        self.data_path = data_path # 用于生成四种模态数据
-        self.repeat = repeat # 重复次数 作用暂时不明
+        self.load_data()  
+        self.data_path = data_path 
+        self.repeat = repeat 
         self.window_size = window_size
-        self.label_flag = label_flag # 选取14个label或者28个label
+        self.label_flag = label_flag 
 
-        # 生成标签 (这里要根据提示选择label_14或者label_28)
+        
         self.label = []
         for index in range(len(self.data_dict)):
             info = self.data_dict[index]
-            if self.label_flag == 14:  # 选取14个label
+            if self.label_flag == 14:  
                 self.label.append(int(info['label_14']) - 1)
-            elif self.label_flag == 28: # 选取28个label
+            elif self.label_flag == 28: 
                 self.label.append(int(info['label_28']) - 1)
 
         self.debug = debug
@@ -51,23 +51,23 @@ class Feeder(Dataset):
         self.use_mmap = use_mmap
 
 
-    # 定义load_data函数，用于导入骨架数据
+    
     def load_data(self):
         self.data = [] # data: T N C
-        for data in self.data_dict: # 遍历data_dict
+        for data in self.data_dict: 
             file_name = data['file_name']
-            with open(self.nw_hand17_root + self.flag + file_name + '.json', 'r') as f: # 读取骨架数据的json文件
+            with open(self.nw_hand17_root + self.flag + file_name + '.json', 'r') as f: 
                 json_file = json.load(f)
-            skeletons = json_file['skeletons'] # 读取json文件的skeletons数据
+            skeletons = json_file['skeletons'] 
             value = np.array(skeletons)
             self.data.append(value)
 
 
-    # 定义随机平移函数
+    
     def random_translation(self, ske_data):
-        translate = np.eye(3)  # 平移矩阵
+        translate = np.eye(3)  
         random.random()
-        t_x = random.uniform(-0.01, 0.01)  # 从(-0.01, 0.01)随机生成一个随机数
+        t_x = random.uniform(-0.01, 0.01)  
         t_y = random.uniform(-0.01, 0.01)
         t_z = random.uniform(-0.01, 0.01)
 
@@ -86,23 +86,23 @@ class Feeder(Dataset):
         return self
 
     def __getitem__(self, index):
-        label = self.label[index % len(self.data_dict)] # 根据index选择标签label
-        value = self.data[index % len(self.data_dict)] # 根据index选择骨骼数据skeletons # T N C
+        label = self.label[index % len(self.data_dict)] 
+        value = self.data[index % len(self.data_dict)] 
 
-        # 预处理
-        data = self.random_translation(value) # 随机平移
+        
+        data = self.random_translation(value) 
         T, N, C = data.shape
         temp_data = np.zeros([self.window_size, N, C])
         temp_data[:T, :, :] = data
         data = temp_data
 
-        # bone 模态
+        
         if 'bone' in self.data_path:
             data_bone = np.zeros_like(data) # T N C
             for bone_idx in range(20):
                 data_bone[:, self.bone[bone_idx][0] - 1, :] = data[:, self.bone[bone_idx][0] - 1, :] - data[:, self.bone[bone_idx][1] - 1, :]
             data = data_bone
-        # motion 模态
+        
         if 'motion' in self.data_path:
             data_motion = np.zeros_like(data)
             data_motion[:-1, :, :] = data[1:, :, :] - data[:-1, :, :]
