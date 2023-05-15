@@ -1,4 +1,5 @@
 # TD-GCN-Gesture
+**This is the official repo of TD-GCN and our work is accepted by IEEE Transactions on Multimedia (TMM).**
 ![image](https://github.com/liujf69/TD-GCN-Gesture/blob/master/fig.png)
 # Prerequisites
 You can install all dependencies by running ```pip install -r requirements.txt```  <br />
