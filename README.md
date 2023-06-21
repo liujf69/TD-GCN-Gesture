@@ -1,5 +1,6 @@
 # TD-GCN-Gesture
-**This is the official repo of TD-GCN and our work is accepted by IEEE Transactions on Multimedia (TMM).**
+**This is the official repo of TD-GCN and our work is accepted by IEEE Transactions on Multimedia (TMM).** <br />
+**[Jinfu Liu, Xinshun Wang, Can Wang, Yuan Gao, Mengyuan Liu. Temporal Decoupling Graph Convolutional Network for Skeleton-based Gesture Recognition. IEEE Transactions on Multimedia (TMM), 2023.](https://ieeexplore.ieee.org/document/10113233)**
 ![image](https://github.com/liujf69/TD-GCN-Gesture/blob/master/fig.png)
 # Prerequisites
 You can install all dependencies by running ```pip install -r requirements.txt```  <br />
