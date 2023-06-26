@@ -62,5 +62,14 @@ Run ```python main.py --device 0 1 --config ./config/ucla/nw-ucla.yaml``` <br />
 # Testing
 We provide several trained weight files and place them in the checkpoints folder.
 
+# Citation
+```
+@ARTICLE{10113233,
+  author={Liu, Jinfu and Wang, Xinshun and Wang, Can and Gao, Yuan and Liu, Mengyuan},
+  journal={IEEE Transactions on Multimedia}, 
+  title={Temporal Decoupling Graph Convolutional Network for Skeleton-based Gesture Recognition}, 
+  year={2023}
+}
+```
 # Contact
 For any questions, feel free to contact: ```liujf69@mail2.sysu.edu.cn```
