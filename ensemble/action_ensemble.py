@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 def get_parser():
-    parser = argparse.ArgumentParser(description = 'Parameters of Extract Person Frame') 
+    parser = argparse.ArgumentParser(description = 'multi-stream ensemble') 
     parser.add_argument(
         '--joint_Score', 
         type = str,
