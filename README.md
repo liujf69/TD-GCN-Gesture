@@ -68,7 +68,7 @@ We provide several trained weight files and place them in the checkpoints folder
   author={Liu, Jinfu and Wang, Xinshun and Wang, Can and Gao, Yuan and Liu, Mengyuan},
   journal={IEEE Transactions on Multimedia}, 
   title={Temporal Decoupling Graph Convolutional Network for Skeleton-based Gesture Recognition}, 
-  year={2023}
+  year={2024}
 }
 ```
 # Contact
