@@ -1,5 +1,5 @@
 # TD-GCN-Gesture
-**This is the official repo of TD-GCN and our work is accepted by IEEE Transactions on Multimedia (TMM).** <br />
+**This is a *fork* of the official repo of TD-GCN and the work accepted by IEEE Transactions on Multimedia (TMM).** <br />
 **[Jinfu Liu, Xinshun Wang, Can Wang, Yuan Gao, Mengyuan Liu. Temporal Decoupling Graph Convolutional Network for Skeleton-based Gesture Recognition. IEEE Transactions on Multimedia (TMM), 2023.](https://ieeexplore.ieee.org/document/10113233)**
 ![image](https://github.com/liujf69/TD-GCN-Gesture/blob/master/fig.png)
 # Prerequisites
@@ -24,13 +24,7 @@ Then, you need to install torchlight by running ```pip install -e torchlight``` 
     - DHG14-28_dataset/
 	  - gesture_1
 	    ...
-  - NW-UCLA/
-    - all_sqe
-      ...
-  - ntu/
-    - nturgbd_raw/
-	  - nturgb+d_skeletons
-            ...
+
 ```
 ## SHREC’17 Track dataset:
 1. First, extract all files to ```/data/shrec/shrec17_dataset``` <br />
@@ -40,12 +34,11 @@ Then, you need to install torchlight by running ```pip install -e torchlight``` 
 1. First, extract all files to ```./data/DHG14-28/DHG14-28_dataset``` <br />
 2. Then, run ```python python gen_dhgdataset.py```
 
-## NTU RGB+D 60 dataset
-1. First, extract all skeleton files to ```./data/ntu/nturgbd_raw``` <br />
-2. Then, run ```python get_raw_skes_data.py```, ```python get_raw_denoised_data.py``` and ```python seq_transformation.py``` in sequence <br />
+## V-LIBRASIL dataset
+1. First, get the data from [V-LIBRASIL](https://libras.cin.ufpe.br) <br />
+2. Put the data into ```./data/vlibrail/nturgbd_raw``` 
+3. Then, run ```python get_raw_skes_data.py```, ```python get_raw_denoised_data.py``` and ```python seq_transformation.py``` in sequence <br />
 
-## NW-UCLA dataset
-1. Move folder ```all_sqe``` to ```./data/NW-UCLA```
 
 # Training
 You can change the configuration in the yaml file and in the main function. We also provide four default yaml configuration files. <br />
@@ -53,11 +46,8 @@ You can change the configuration in the yaml file and in the main function. We a
 Run ```python main.py --device 0 1 --config ./config/shrec17/shrec17.yaml``` <br />
 ## DHG-14/28 dataset:
 Run ```python main.py --device 0 1 --config ./config/dhg14-28/DHG14-28.yaml``` <br />
-## NTU RGB+D 60 dataset:
-On the benchmark of cross-view, run ```python main.py --device 0 1 --config ./config/nturgbd-cross-view/default.yaml``` <br />
-On the benchmark of cross-subject, run ```python main.py --device 0 1 --config ./config/nturgbd-cross-subject/default.yaml``` <br />
-## NW-UCLA dataset:
-Run ```python main.py --device 0 1 --config ./config/ucla/nw-ucla.yaml``` <br />
+## V-LIBRASIL dataset:
+Run  <br />
 
 # Testing
 We provide several trained weight files and place them in the checkpoints folder.
