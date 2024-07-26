@@ -1,7 +1,16 @@
 # TD-GCN-Gesture
 **This is the official repo of TD-GCN and our work is accepted by IEEE Transactions on Multimedia (TMM).** <br />
 **[Jinfu Liu, Xinshun Wang, Can Wang, Yuan Gao, Mengyuan Liu. Temporal Decoupling Graph Convolutional Network for Skeleton-based Gesture Recognition. IEEE Transactions on Multimedia (TMM), 2023.](https://ieeexplore.ieee.org/document/10113233)**
-![image](https://github.com/liujf69/TD-GCN-Gesture/blob/master/fig.png)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/temporal-decoupling-graph-convolutional/skeleton-based-action-recognition-on-shrec)](https://paperswithcode.com/sota/skeleton-based-action-recognition-on-shrec?p=temporal-decoupling-graph-convolutional) <br />
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/temporal-decoupling-graph-convolutional/hand-gesture-recognition-on-dhg-14)](https://paperswithcode.com/sota/hand-gesture-recognition-on-dhg-14?p=temporal-decoupling-graph-convolutional) <br />
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/temporal-decoupling-graph-convolutional/skeleton-based-action-recognition-on-uav)](https://paperswithcode.com/sota/skeleton-based-action-recognition-on-uav?p=temporal-decoupling-graph-convolutional) <br />
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/temporal-decoupling-graph-convolutional/hand-gesture-recognition-on-dhg-28)](https://paperswithcode.com/sota/hand-gesture-recognition-on-dhg-28?p=temporal-decoupling-graph-convolutional) <br />
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/temporal-decoupling-graph-convolutional/skeleton-based-action-recognition-on-n-ucla)](https://paperswithcode.com/sota/skeleton-based-action-recognition-on-n-ucla?p=temporal-decoupling-graph-convolutional) <br />
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/temporal-decoupling-graph-convolutional/skeleton-based-action-recognition-on-ntu-rgbd)](https://paperswithcode.com/sota/skeleton-based-action-recognition-on-ntu-rgbd?p=temporal-decoupling-graph-convolutional) <br />
+<div align=center>
+<img src="https://github.com/liujf69/TD-GCN-Gesture/blob/master/fig.png"/>
+</div>
+
 # Prerequisites
 You can install all dependencies by running ```pip install -r requirements.txt```  <br />
 Then, you need to install torchlight by running ```pip install -e torchlight```  <br />
@@ -50,18 +59,20 @@ Then, you need to install torchlight by running ```pip install -e torchlight``` 
 # Training
 You can change the configuration in the yaml file and in the main function. We also provide four default yaml configuration files. <br />
 ## SHREC’17 Track dataset:
-Run ```python main.py --device 0 1 --config ./config/shrec17/shrec17.yaml``` <br />
+Run ```python main.py --device 0 --config ./config/shrec17/shrec17.yaml``` <br />
 ## DHG-14/28 dataset:
-Run ```python main.py --device 0 1 --config ./config/dhg14-28/DHG14-28.yaml``` <br />
+Run ```python main.py --device 0 --config ./config/dhg14-28/DHG14-28.yaml``` <br />
 ## NTU RGB+D 60 dataset:
-On the benchmark of cross-view, run ```python main.py --device 0 1 --config ./config/nturgbd-cross-view/default.yaml``` <br />
-On the benchmark of cross-subject, run ```python main.py --device 0 1 --config ./config/nturgbd-cross-subject/default.yaml``` <br />
+On the benchmark of cross-view, run ```python main.py --device 0 --config ./config/nturgbd-cross-view/default.yaml``` <br />
+On the benchmark of cross-subject, run ```python main.py --device 0 --config ./config/nturgbd-cross-subject/default.yaml``` <br />
 ## NW-UCLA dataset:
-Run ```python main.py --device 0 1 --config ./config/ucla/nw-ucla.yaml``` <br />
+Run ```python main.py --device 0 --config ./config/ucla/nw-ucla.yaml``` <br />
 
 # Testing
 We provide several trained weight files and place them in the checkpoints folder.
-
+```
+python main_MMCL.py --device 0 --config <config.yaml> --phase test --weights <work_dir>/<weight.pt>
+```
 # Citation
 ```
 @ARTICLE{10113233,
