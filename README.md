@@ -71,7 +71,7 @@ Run ```python main.py --device 0 --config ./config/ucla/nw-ucla.yaml``` <br />
 # Testing
 We provide several trained weight files and place them in the checkpoints folder.
 ```
-python main_MMCL.py --device 0 --config <config.yaml> --phase test --weights <work_dir>/<weight.pt>
+python main.py --device 0 --config <config.yaml> --phase test --weights <work_dir>/<weight.pt>
 ```
 # Citation
 ```
