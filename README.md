@@ -82,6 +82,6 @@ python main.py --device 0 --config <config.yaml> --phase test --weights <work_di
   year={2024}
 }
 ```
-Our project is based on the [CTR-GCN](https://github.com/Uason-Chen/CTR-GCN) <br />
+Our project is based on the [DSTA-Net](https://github.com/lshiwjx/DSTA-Net), [CTR-GCN](https://github.com/Uason-Chen/CTR-GCN) <br />
 # Contact
 For any questions, feel free to contact: ```liujf69@mail2.sysu.edu.cn```
