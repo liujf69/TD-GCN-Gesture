@@ -7,7 +7,6 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/temporal-decoupling-graph-convolutional/hand-gesture-recognition-on-dhg-28)](https://paperswithcode.com/sota/hand-gesture-recognition-on-dhg-28?p=temporal-decoupling-graph-convolutional) <br />
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/temporal-decoupling-graph-convolutional/skeleton-based-action-recognition-on-n-ucla)](https://paperswithcode.com/sota/skeleton-based-action-recognition-on-n-ucla?p=temporal-decoupling-graph-convolutional) <br />
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/temporal-decoupling-graph-convolutional/skeleton-based-action-recognition-on-ntu-rgbd)](https://paperswithcode.com/sota/skeleton-based-action-recognition-on-ntu-rgbd?p=temporal-decoupling-graph-convolutional) <br />
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/temporal-decoupling-graph-convolutional/skeleton-based-action-recognition-on-uav)](https://paperswithcode.com/sota/skeleton-based-action-recognition-on-uav?p=temporal-decoupling-graph-convolutional) <br />
 <div align=center>
 <img src="https://github.com/liujf69/TD-GCN-Gesture/blob/master/fig.png"/>
 </div>
