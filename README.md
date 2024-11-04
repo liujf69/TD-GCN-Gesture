@@ -73,6 +73,30 @@ We provide several trained weight files and place them in the checkpoints folder
 ```
 python main.py --device 0 --config <config.yaml> --phase test --weights <work_dir>/<weight.pt>
 ```
+
+# Ensemble
+```
+1. Set Rate
+2. Run:
+python gesture_ensemble.py \
+--joint_Score <joint_path> \
+--bone_Score <bone_path> \
+--jointmotion_Score <jointmotion_path> \
+--val_sample <val_path> \
+--benchmark <benchmark>
+
+# Example for Shrec_28
+1. Download .pkl file from: https://drive.google.com/drive/folders/1ux87mUirBQjmA4b4fEWtb9tuj-8wSYHt
+2. Set Rate [0.5, 0.5, 0.5] or [0.5, 0.3, 0.2]
+3. Run:
+python gesture_ensemble.py \
+--joint_Score ./joint.pkl \
+--bone_Score ./bone.pkl \
+--jointmotion_Score ./jointmotion.pkl \
+--val_sample ./shrec17_28.txt \
+--benchmark Shrec_28
+```
+
 # Citation
 ```
 @ARTICLE{10113233,
