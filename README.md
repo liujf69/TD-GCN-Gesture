@@ -103,7 +103,7 @@ python gesture_ensemble.py \
 ```
 
 # Citation
-```bash
+```python
 # Result about SHREC’17 Track, DHG-14/28, NTU RGB+D 60 and NW-UCLA datasets.
 @ARTICLE{10113233,
   author={Liu, Jinfu and Wang, Xinshun and Wang, Can and Gao, Yuan and Liu, Mengyuan},
