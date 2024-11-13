@@ -41,6 +41,11 @@ Then, you need to install torchlight by running ```pip install -e torchlight``` 
 	  - nturgb+d_skeletons
             ...
 ```
+## Download from cloud drive:
+1. **SHREC’17 Track** dataset from [Baidu Drive](https://pan.baidu.com/s/1agHIw92pLAqLh6jPMpyZVw), Password is **TDGC**. Download from [Google Drive](https://drive.google.com/file/d/1lhbbR22QcJWGT4NpOvypqx-euQ6bkwVd/view?usp=sharing) <br />
+2. **DHG-14/28** dataset from [Baidu Drive](https://pan.baidu.com/s/1FVV-KZZ6F0KRy3IAHPn4tA), Password is **TDGC**. <br />
+3. **NTU RGB+D 60** dataset from [Baidu Drive](https://pan.baidu.com/s/16WmFFkGwZM6be93L376WUQ), Password is **TDGC**. <br />
+
 ## SHREC’17 Track dataset:
 1. First, extract all files to ```/data/shrec/shrec17_dataset``` <br />
 2. Then, run ```python gen_traindataset.py``` and ```python gen_testdataset.py``` <br />
