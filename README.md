@@ -104,10 +104,19 @@ python gesture_ensemble.py \
 
 # Citation
 ```
+# Result about SHREC’17 Track, DHG-14/28, NTU RGB+D 60 and NW-UCLA datasets.
 @ARTICLE{10113233,
   author={Liu, Jinfu and Wang, Xinshun and Wang, Can and Gao, Yuan and Liu, Mengyuan},
   journal={IEEE Transactions on Multimedia}, 
   title={Temporal Decoupling Graph Convolutional Network for Skeleton-based Gesture Recognition}, 
+  year={2024}
+}
+
+# Result about UAV-Human dataset.
+@inproceedings{liu2024HDBN,
+  author={Liu, Jinfu and Yin, Baiqiao and Lin, Jiaying and Wen, Jiajun and Li, Yue and Liu, Mengyuan},
+  title={HDBN: A Novel Hybrid Dual-branch Network for Robust Skeleton-based Action Recognition}, 
+  booktitle={Proceedings of the IEEE International Conference on Multimedia and Expo Workshop (ICMEW)}, 
   year={2024}
 }
 ```
