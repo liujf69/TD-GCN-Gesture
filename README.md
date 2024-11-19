@@ -74,7 +74,7 @@ On the benchmark of cross-subject, run ```python main.py --device 0 --config ./c
 Run ```python main.py --device 0 --config ./config/ucla/nw-ucla.yaml``` <br />
 
 # Testing
-We provide several trained weight files and place them in the checkpoints folder.
+We provide several trained weight files and place them in the [checkpoints](https://github.com/liujf69/TD-GCN-Gesture/tree/master/checkpoints) folder.
 ```
 python main.py --device 0 --config <config.yaml> --phase test --weights <work_dir>/<weight.pt>
 ```
