@@ -5,7 +5,7 @@
     <a href="https://scholar.google.com.hk/citations?user=NflmfmEAAAAJ&hl=zh-CN">Xinshun Wang</a></sup>,
     <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=sEeImYgAAAAJ">Can Wang</a></sup>, 
     <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=hAOHupcAAAAJ">Yuan Gao</a></sup>,    
-    <a href="https://scholar.google.com.hk/citations?user=woX_4AcAAAAJ&hl=zh-CN">Mengyuan Liu</a></sup>, 
+    <a href="https://scholar.google.com.hk/citations?user=woX_4AcAAAAJ&hl=zh-CN">Mengyuan Liu</a></sup>
     <br>
     </sup> Sun Yat-sen University, Kiel University, Tampere University, Peking University
   </p>
