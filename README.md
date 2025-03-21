@@ -1,15 +1,29 @@
-# TD-GCN-Gesture
-**This is the official repo of TD-GCN and our work is accepted by IEEE Transactions on Multimedia (TMM).** <br />
-**[Jinfu Liu, Xinshun Wang, Can Wang, Yuan Gao, Mengyuan Liu. Temporal Decoupling Graph Convolutional Network for Skeleton-based Gesture Recognition. IEEE Transactions on Multimedia (TMM), 2023.](https://ieeexplore.ieee.org/document/10113233)**
+<p align="center">
+  <h1 align="center">Temporal Decoupling Graph Convolutional Network for Skeleton-based Gesture Recognition</h1>
+  <p align="center">
+    <a href="https://scholar.google.com.hk/citations?user=jdOJpl0AAAAJ&hl=zh-CN">Jinfu Liu</a></sup>,
+    <a href="https://scholar.google.com.hk/citations?user=NflmfmEAAAAJ&hl=zh-CN">Xinshun Wang</a></sup>,
+    <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=sEeImYgAAAAJ">Can Wang</a></sup>, 
+    <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=hAOHupcAAAAJ">Yuan Gao</a></sup>,    
+    <a href="https://scholar.google.com.hk/citations?user=woX_4AcAAAAJ&hl=zh-CN">Mengyuan Liu</a></sup>, 
+    <br>
+    </sup> Sun Yat-sen University, Kiel University, Tampere University, Peking University
+  </p>
+  <h2 align="center">IEEE Transactions on Multimedia (TMM), 2024</h2>
+  <h3 align="center"><a href="https://ieeexplore.ieee.org/document/10113233">📄[Paper]</a> | <a href="https://github.com/liujf69/TD-GCN-Gesture">💻[Code]</a>  </h3> 
+  <div align="center"></div>
+</p>
+
+<div align=center>
+<img src="https://github.com/liujf69/TD-GCN-Gesture/blob/master/fig.png"/>
+</div>
+
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/temporal-decoupling-graph-convolutional/skeleton-based-action-recognition-on-shrec)](https://paperswithcode.com/sota/skeleton-based-action-recognition-on-shrec?p=temporal-decoupling-graph-convolutional) <br />
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/temporal-decoupling-graph-convolutional/hand-gesture-recognition-on-dhg-14)](https://paperswithcode.com/sota/hand-gesture-recognition-on-dhg-14?p=temporal-decoupling-graph-convolutional) <br />
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/temporal-decoupling-graph-convolutional/skeleton-based-action-recognition-on-uav)](https://paperswithcode.com/sota/skeleton-based-action-recognition-on-uav?p=temporal-decoupling-graph-convolutional) <br />
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/temporal-decoupling-graph-convolutional/hand-gesture-recognition-on-dhg-28)](https://paperswithcode.com/sota/hand-gesture-recognition-on-dhg-28?p=temporal-decoupling-graph-convolutional) <br />
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/temporal-decoupling-graph-convolutional/skeleton-based-action-recognition-on-n-ucla)](https://paperswithcode.com/sota/skeleton-based-action-recognition-on-n-ucla?p=temporal-decoupling-graph-convolutional) <br />
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/temporal-decoupling-graph-convolutional/skeleton-based-action-recognition-on-ntu-rgbd)](https://paperswithcode.com/sota/skeleton-based-action-recognition-on-ntu-rgbd?p=temporal-decoupling-graph-convolutional) <br />
-<div align=center>
-<img src="https://github.com/liujf69/TD-GCN-Gesture/blob/master/fig.png"/>
-</div>
 
 # Prerequisites
 You can install all dependencies by running ```pip install -r requirements.txt```  <br />
